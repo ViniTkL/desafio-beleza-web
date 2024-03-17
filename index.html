@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./styles/style.css" rel="stylesheet">
+    <title>Desafio Beleza Web</title>
 </head>
 <body>
-    <div>
-        <div>
-            <nav>
+    <main class="main">
+        <aside class="menu">
+            <div class="menu-content">
+                <nav class="header-nav">
+                    <ul class="lista-nav">
+                        <li><a href="#"  class="menu-item-select">Sacola</a></li>
+                        <li><a href="#">Pagamento</a></li>
+                        <li><a href="#">Confirmação</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
 
-            </nav>
-        </div>
 
         <div>
-            <table>
-                <thead>
-                    <th>nome</th>
-                    <th>preco</th>
-                    <th>desconto</th>
-                    <th>descrição</th>
-                    <th>id</th>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            
         </div>
 
         <div>
 
 
         </div>
-    </div>
+    </main>
 
     <script src="./js/model.js"></script>
     <script src="./js/Controller.js"></script>
     <script src="./js/View.js"></script>
+    <script>
+        new Controller();
+    </script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 class Model{
     constructor(){
         this.dados = [];
-       
     }
 
     async getData(){
