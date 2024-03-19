@@ -2,11 +2,22 @@ class Controller{
     constructor(){
         console.log("hahahahah");
         this.infos = new Model();
+        this.infos.getData();
+        console.log(this.infos.dados);
 
-        this.show();
+        this.lista = document.querySelector(".itens-list")
+
+        this.listing();
     }
 
-    show(){
-        this.infos.getData();
+   
+    listing(){
+
+
+        for(const [index, item] of this.infos.dados.entries()){
+            const view = new View(item);
+
+            this.lista.innerHTML += view.render();
+        }
     }
 }

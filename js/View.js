@@ -1,17 +1,18 @@
 class View{
-    constructor(dados){
-        this.dados = dados;
+    constructor(dado){
+        this.dado = dado;
     }
 
 
     render(){
-        return`
-        <tr>
-            <td>${this.dados.price}</td>
-            <td>${this.dados.discont}</td>
-            <td>${this.dados.description}</td>
-            <td>${this.dados.id}</td>
-        </tr>
-            `
+            return`
+            <div>
+                <img src="${this.dado.photo}" />
+                <p>${this.dado.description}</p>
+                <p>${this.dado.price}</p>
+                <p>${this.dado.discount}</p>
+            </div>
+                `
+       
     }
 }
